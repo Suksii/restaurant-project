@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Butler-Light";
+    src: url("../src/assets/fonts/Butler_Light.woff")
+}
+@font-face {
+    font-family: "Butler-Regular";
+    src: url("../src/assets/fonts/Butler_Regular.woff");
+}
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("../src/assets/fonts/Gilroy-Bold.woff");
+}
+@font-face {
+    font-family: "Rockness";
+    src: url("../src/assets/fonts/Rockness.woff");
+}
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("../src/assets/fonts/Gilroy-Medium.woff");
+}
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("../src/assets/fonts/Gilroy-Regular.woff");
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+.slide-down {
+    animation: slideDown 0.6s forwards;
+}
+.slide-up {
+    animation: slideUp 0.6s forwards;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: grey;
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
